@@ -39,7 +39,9 @@ if ($now > 1) {
 for ($i = 1; $i <= $max_page; $i++) {
     if ($i == $now) {
         $now_page[] = $now;
+        $now_page_none = 'page_nation_none';
     } else {
+
         $now_page[] = 'complete.php?page_id=' . $i;
     }
 }
