@@ -1,8 +1,8 @@
-# pagenation
+# page_nation
 
 様々な奴(php,js)見比べて理解、カスタマイズ、利用できる様にするのが目的。ノッてくるまで markdown、git の練習も兼ねるとする
 
-## pagenation1
+## page_nation1
 
 [侍エンジニア](https://www.sejuku.net/blog/70234)
 
@@ -11,3 +11,5 @@
   - ~~array を [] に~~
   - 変数名をどうするか。
   - そもそもコピペだと動いていないので動くようにする and mvc 化
+  - ひとまず vc 化
+  -
