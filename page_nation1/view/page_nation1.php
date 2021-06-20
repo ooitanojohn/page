@@ -11,6 +11,8 @@
 
 
 
+
+
 </body>
 
 </html>
@@ -22,9 +24,10 @@ echo $val['book_kind']. '　'.$val['book_name']. '<br />';
 echo '全件数'. $books_num. '件'. '　'; // 全データ数の表示です。
 
 if($now > 1){ // リンクをつけるかの判定
-echo '<a href='/paging.php?page_id=' .($now - 1).'')>前へ</a>'. '　';
+echo '
+<link rel='next' href='/paging.php?page_id=' .($now - 1).'')>前へ</link>'. '　';
 } else {
 echo '前へ'. '　';
 }
 
-for($i = 1; $i <= $max_page; $i++){ if ($i==$now) { echo $now. '　' ; } else { echo '<a href=' /test.php?page_id='. $i. '')>' . $i. '</a>' . '　' ; } } if($now < $max_page){ // リンクをつけるかの判定 echo '<a href=' /paging.php?page_id='.($now + 1).'')>次へ</a>' . '　' ; } else { echo '次へ' ; }
+for($i = 1; $i <= $max_page; $i++){ if ($i==$now) { echo $now. '　' ; } else { echo '<link rel=prev'' href=' /test.php?page_id='. $i. '')>' . $i. '</link>' . '　' ; } } if($now < $max_page){ // リンクをつけるかの判定 echo '<link rel="next" href=' /paging.php?page_id='.($now + 1).'')>次へ</link>' . '　' ; } else { echo '次へ' ; }
