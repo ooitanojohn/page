@@ -38,15 +38,26 @@ if ($now > 1) {
 
 for ($i = 1; $i <= $max_page; $i++) {
     if ($i == $now) {
+        $page_class[] = 'exist';
+        $page_link_class[] = 'none';
         $now_page[] = $now;
-        $now_page_none = 'page_nation_none';
     } else {
-
+        $page_class[] = 'none';
+        $page_link_class[] = 'exist';
         $now_page[] = 'complete.php?page_id=' . $i;
     }
 }
+
 echo '$now_page:';
 var_dump($now_page);
+echo '<br>';
+
+echo '$page_class:';
+var_dump($page_class);
+echo '<br>';
+
+echo '$page_link_class:';
+var_dump($page_link_class);
 echo '<br>';
 
 // リンクをつけるかの判定

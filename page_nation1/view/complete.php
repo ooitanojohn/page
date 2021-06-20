@@ -22,9 +22,11 @@
         <a href='<?php echo $prev_page ?>'>前へ</a>
 
         <?php for ($i = 1; $i <= $max_page; $i++) { ?>
-            <a><?php echo $now ?></a>
 
-            <a href='<?php echo $now_page[$i - 1] ?>'><?php echo $i ?></a>
+            <a class='<?php echo $page_class[$i - 1] ?>'><?php echo $now_page[$i - 1] ?></a>
+
+            <a href='<?php echo $now_page[$i - 1] ?>' class="<?php echo $page_link_class[$i - 1] ?>"><?php echo $i ?></a>
+
 
         <?php } ?>
 

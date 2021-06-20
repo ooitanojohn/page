@@ -26,5 +26,5 @@
   - 後ちょっとできそうがこない
   - a タグ 最初、最終 page の時機能消せ
   1. term1 タグは php 内で出力禁止。
-  - answer display none and とりま<p>タグで代用
+  - answer display none and とりま<a>タグで代用
   - class の配列化する、風呂入りてえ、、、、また三時間コースだ、、、、

@@ -1,3 +1,6 @@
-.page_nation_none {
+a.none {
   display: none;
+}
+.exist {
+  /* 存在する時のcss */
 }
