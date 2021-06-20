@@ -5,3 +5,9 @@
 ## pagenation1
 
 [侍エンジニア](https://www.sejuku.net/blog/70234)
+
+- 変更する所(予定)
+  - define から const へ
+  - array を [] に
+  - 変数名をどうするか。
+  - そもそもコピペだと動いていないので動くようにする and mvc 化
