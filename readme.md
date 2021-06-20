@@ -16,4 +16,4 @@
   - link rel に修正 (2019 に google サポは終了)[タグ](http://ooitanojohn.wp.xdomain.jp/2021/06/20/%e3%83%9a%e3%83%bc%e3%82%b8%e3%83%8d%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3/)
   - google はカノニカルタグを推奨(よく分からん)
   - ~~表示項目は aside 想定 その下に link が来るようにデザインしてみる~~
-  - やっぱり nav で
+  - やっぱり nav で 説明ではないから li は ul 使用
