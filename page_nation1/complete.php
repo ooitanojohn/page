@@ -31,10 +31,9 @@ echo '$disp_data:';
 var_dump($disp_data);
 echo '<br>';
 
-if ($now > 1) { // リンクをつけるかの判定
+// リンクをつけるかの判定
+if ($now > 1) {
     $prev_page = 'complete.php?page_id=' . ($now - 1);
-} else {
-    // $one_or_another =
 }
 
 for ($i = 1; $i <= $max_page; $i++) {
@@ -48,10 +47,9 @@ echo '$now_page:';
 var_dump($now_page);
 echo '<br>';
 
-if ($now < $max_page) { // リンクをつけるかの判定
+// リンクをつけるかの判定
+if ($now < $max_page) {
     $next_page = 'complete.php?page_id=' . ($now + 1);
-} else {
-    // echo '次へ';
 }
 
 require_once 'view/complete.php';
