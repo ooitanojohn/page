@@ -20,3 +20,5 @@
   - complete and detail を想定して構成する。
   - complete は a で反映 detail は link で
   - 現在のページリンク no 分岐の際 mvc どう分ける
+  - ~~class で 分岐マン~~ // そんなの要らねーぞばか
+  - 後ちょっとできそうがこない

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'model/initialize.php';
+require_once '../config/initialize.php';
 const MAX = '3';
 
 $books = [
@@ -16,6 +16,7 @@ $books = [
 $books_num = count($books);
 $max_page = ceil($books_num / MAX);
 
+// 現在のページno.GET
 if (!isset($_GET['page_id'])) {
     $now = 1;
 } else {
@@ -26,22 +27,29 @@ $start_no = ($now - 1) * MAX;
 
 $disp_data = array_slice($books, $start_no, MAX, true);
 
+echo '$disp_data:';
+var_dump($disp_data);
+echo '<br>';
+
 if ($now > 1) { // リンクをつけるかの判定
-    $prev_page = '/complete.php?page_id=' . ($now - 1) . ')';
+    $prev_page = 'complete.php?page_id=' . ($now - 1);
 } else {
     // $one_or_another =
 }
 
 for ($i = 1; $i <= $max_page; $i++) {
     if ($i == $now) {
-        $now_page = $now;
+        $now_page[] = $now;
     } else {
-        $now_page = '/complete.php?page_id=' . $i;
+        $now_page[] = 'complete.php?page_id=' . $i;
     }
 }
+echo '$now_page:';
+var_dump($now_page);
+echo '<br>';
 
 if ($now < $max_page) { // リンクをつけるかの判定
-    $next_page = '/complete.php?page_id=' . ($now + 1);
+    $next_page = 'complete.php?page_id=' . ($now + 1);
 } else {
     // echo '次へ';
 }
