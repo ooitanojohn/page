@@ -22,9 +22,11 @@
         </ul>
 
         <a href='<?php echo $prev_page ?>'>前へ</a>
+
         <?php for ($i = 1; $i <= $max_page; $i++) { ?>
-            <a href='<?php echo $now_page ?>'><?php echo $i ?></a>
+            <a href='<?php echo $now_page[$i - 1] ?>'><?php echo $i ?></a>
         <?php } ?>
+
         <a href='<?php echo $next_page ?>'>次へ</a>
     </nav>
 
