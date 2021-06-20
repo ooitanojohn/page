@@ -28,3 +28,4 @@
   1. term1 タグは php 内で出力禁止。
   - answer display none and とりま<a>タグで代用
   - class の配列化する、風呂入りてえ、、、、また三時間コースだ、、、、
+  - bootstrap の class 指定で display:none したみ
