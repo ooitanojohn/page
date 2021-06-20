@@ -9,6 +9,10 @@
     <link href="../css/bootstrap.rtl.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="../css/bootstrap.rtl.min.css.map" rel="stylesheet" crossorigin="anonymous">
     <title>Document</title>
+    <link rel=prev'' href=' /test.php?page_id=' . $i. '' )>' . $i. '</link>
+    <link rel='next' href='/paging.php?page_id=' .($now - 1).'')>前へ
+</head>
+
 </head>
 
 <body>
@@ -20,6 +24,7 @@
             <?php endforeach; ?>
             <li><?php echo '全件数' . $books_num . '件' . '　'; ?></li> // 全データ数の表示です。
         </ul>
+
     </nav>
 
 
