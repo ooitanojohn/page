@@ -1,4 +1,5 @@
 <?php
+
 define('MAX', '3');
 $books = array(
     array('book_kind' => 'ライトノベル', 'book_name' => 'ライトノベルの本'),
@@ -9,7 +10,6 @@ $books = array(
     array('book_kind' => '推理小説', 'book_name' => '推理小説の本'),
     array('book_kind' => 'フォトブック', 'book_name' => 'フォトブックの本'),
 );
-
 
 $books_num = count($books);
 $max_page = ceil($books_num / MAX);
@@ -26,6 +26,21 @@ $disp_data = array_slice($books, $start_no, MAX, true);
 
 
 ?>
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
 
 foreach($disp_data as $val){
 echo $val['book_kind']. '　'.$val['book_name']. '<br />';
