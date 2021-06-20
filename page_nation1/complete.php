@@ -1,5 +1,6 @@
 <?php
 
+require_once 'model/initialize.php';
 const MAX = '3';
 
 $books = [
@@ -25,4 +26,24 @@ $start_no = ($now - 1) * MAX;
 
 $disp_data = array_slice($books, $start_no, MAX, true);
 
-require_once 'view/page_nation1.php';
+if ($now > 1) { // リンクをつけるかの判定
+    $prev_page = '/complete.php?page_id=' . ($now - 1) . ')';
+} else {
+    // $one_or_another =
+}
+
+for ($i = 1; $i <= $max_page; $i++) {
+    if ($i == $now) {
+        $now_page = $now;
+    } else {
+        $now_page = '/complete.php?page_id=' . $i;
+    }
+}
+
+if ($now < $max_page) { // リンクをつけるかの判定
+    $next_page = '/complete.php?page_id=' . ($now + 1);
+} else {
+    // echo '次へ';
+}
+
+require_once 'view/complete.php';
