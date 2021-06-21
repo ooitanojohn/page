@@ -49,20 +49,3 @@ if ($now < $max_page) {
 }
 
 require_once 'view/complete.php';
-
-
-echo '$disc_data:';
-var_dump($disc_data);
-echo '<br>';
-
-echo '$now_page:';
-var_dump($now_page);
-echo '<br>';
-
-echo '$page_class:';
-var_dump($page_class);
-echo '<br>';
-
-echo '$page_link_class:';
-var_dump($page_link_class);
-echo '<br>';

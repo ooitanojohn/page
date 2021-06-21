@@ -25,7 +25,6 @@ foreach ($books as $val) {
         $page_text = $val;
     }
 }
-
 // ページリンク
 // 先頭と最終のリンク消す
 if ($page_id > 1) {
@@ -40,15 +39,5 @@ if ($page_id < $books_num) {
     $page_next = $books_num;
     $next_class = 'none';
 }
-echo '$page_id:';
-var_dump($page_id);
-echo '<br>';
-echo '$page_next:';
-var_dump($page_next);
-echo '<br>';
-
-echo '$page_prev:';
-var_dump($page_prev);
-echo '<br>';
 
 require_once 'view/detail.php';
