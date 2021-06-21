@@ -14,8 +14,8 @@
     <nav>
         <h1><?php echo '全件数' . $books_num . '件' . '　'; ?></h1>
         <ul>
-            <?php foreach ($disp_data as $val) : ?>
-                <li><?php echo $val['book_kind'] . '　' . $val['book_name'] ?></li>
+            <?php foreach ($disc_data as $val) : ?>
+                <li><a href='detail.php?page_id=<?php echo $val['page_no'] ?>'><?php echo $val['book_kind'] . ' ' . $val['book_name'] ?></a></li>
             <?php endforeach; ?>
         </ul>
 

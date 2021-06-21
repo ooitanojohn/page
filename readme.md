@@ -28,4 +28,6 @@
   1. term1 タグは php 内で出力禁止。
   - answer display none and とりま<a>タグで代用
   - class の配列化する、風呂入りてえ、、、、また三時間コースだ、、、、
-  - bootstrap の class 指定で display:none したみ
+  - bootstrap の class 指定で display:none したみ -~~complete → detail への 本文データ受け渡し detail で読み込み or button session での データ受け渡しがあるな~~
+  - post 回数は少ないほうがいいので 読み込みだ.
+  - 後々 table タグを使用するので table タグを利用することとする。
