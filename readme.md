@@ -2,7 +2,7 @@
 
 様々な奴(php,js)見比べて理解、カスタマイズ、利用できる様にするのが目的。ノッてくるまで markdown、git の練習も兼ねるとする。
 
-## Lv1 page_nation1
+## page_nation1
 
 [侍エンジニア](https://www.sejuku.net/blog/70234)
 
